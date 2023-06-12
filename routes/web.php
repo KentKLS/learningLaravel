@@ -17,8 +17,8 @@ use PhpParser\Builder\Param;
 |
 */
 
-Route::get('/', [HomeController::class, 'show']);
-Route::get('/product', [ProductController::class, "showProducts"]);
-Route::get('/product/{id}',[ProductController::class, 'showProduct'] );
-Route::get('/cart',[CartController::class, 'show'] );
+Route::get('/', [HomeController::class, 'show'])->name('showHome');
+Route::get('/product', [ProductController::class, "showProducts"])->name('showProducts');
+Route::get('/product/{id}',[ProductController::class, 'showProduct'] )->name('showProduct');
+Route::post('/cart',[CartController::class, 'show'] )->name('showCart');
 
