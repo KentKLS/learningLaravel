@@ -10,7 +10,16 @@ class ProductController extends Controller
     {
         return view('product-list');
     }
+
+    // public function showProduct($id)
+    // {
+    //     $test[] = $id;
+    //     return view('product-details', ["test" => $test]);
+    // }
+
     public function showProduct($id){
-        return view('product-details');
-    }
+
+         return view('product-details')
+                    ->with('key', $id);
+     }
 }
