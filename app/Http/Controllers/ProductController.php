@@ -2,20 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductsList;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function showProducts()
     {
-        return view('product-list');
+        $products = ProductsList::get();
+        return view('product-list',compact('products'));
     }
-
-    // public function showProduct($id)
-    // {
-    //     $test[] = $id;
-    //     return view('product-details', ["test" => $test]);
-    // }
 
     public function showProduct($id){
 
