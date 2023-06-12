@@ -54,7 +54,7 @@
                     <a href="#"> My Account </a>
                 </li>
                 <li>
-                    <a href="/cart">
+                    <a href=" {{'cart'}} ">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt"
                             viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
 
